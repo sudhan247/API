@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Store</title>
+<style>body{background-image:url("static/images/te.jpg");
+background-repeat: no-repeat;background-size:cover;
+}</style>
+
+</head>
+<body>	<div>	
+	{
+	<p>"ok":{{dic['ok']}}  ,</p> 
+        
+	<p> "members" : [
+			<p>
+			{% for i in dic['members'] %}
+				{
+				<p>"id":{{i.id}} ,</p>
+				<p>"real_name":{{i.real_name}} ,</p>	
+                                <p>"tz": {{i.tz}} ,</p>	
+				<p>"activity_periods":[
+					{% for j in i.activity_periods %}
+						<p>{<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"start_time": {{j.start_time}},<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"end_time": {{j.end_time}}<br>
+						},<p>
+					{% endfor %}
+
+							]
+				</p>
+				},<p></p>		
+			{% endfor %}
+			</p>
+			]
+
+
+	</p>
+	}
+	
+	</div>
+	
+</body>
+</html>
