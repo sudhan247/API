@@ -9,6 +9,9 @@ To run the program in your local host
     
     3) Enter python app.py
     
-    4) Then in your browser check http://127.0.0.1:3250/
+    4) Install requirements.txt
+    
+    5) Then in your browser check http://127.0.0.1:3250/
     
 The api is already serving through pythonanywhere at http://sudhan247.pythonanywhere.com/
+
